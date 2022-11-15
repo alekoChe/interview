@@ -6,19 +6,20 @@ public class MainPerson {
 
     public static void main(String[] args) {
         Person person1 = new Person.Builder()
-                .withId(1L)
-                .withLastName("Ivan")
-                .withFirstName("Johnson")
+                .withLastName("Rurykov")
+                .withFirstName("Ivan")
+                .withMiddleName("Vasylyevich")
                 .withGender("M")
-                .withBirthDate(LocalDateTime.now().minusYears(25))
-                .withProfession("freser")
-                .withTittle("4-degree")
+                .withAge(33)
+                .withAddress("Moscow, Kremlin")
+                .withCountry("Russia")
+                .withPhone("112")
                 .build();
 
         Person person2 = new Person.Builder()
                 .withLastName("Ivan")
                 .withFirstName("Johnson")
-                .withProfession("freser")
+                .withAge(33)
                 .build();
 
         System.out.println(person1.toString());

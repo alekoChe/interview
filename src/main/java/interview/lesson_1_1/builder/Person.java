@@ -4,19 +4,16 @@ import java.time.LocalDateTime;
 
 public class Person {
 
-    private Long id;
     private  String lastName;
     private String firstName;
+    private String  middleName;
+    private int age;
     private String gender;
-    private LocalDateTime birthDate;
-    private String profession;
-    private String tittle;
+    private String country;
+    private String address;
+    private String phone;
 
     private Person() {
-    }
-
-    public Long getId() {
-        return id;
     }
 
     public String getLastName() {
@@ -27,20 +24,28 @@ public class Person {
         return firstName;
     }
 
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
     public String getGender() {
         return gender;
     }
 
-    public LocalDateTime getBirthDate() {
-        return birthDate;
+    public String getCountry() {
+        return country;
     }
 
-    public String getProfession() {
-        return profession;
+    public String getAddress() {
+        return address;
     }
 
-    public String getTittle() {
-        return tittle;
+    public String getPhone() {
+        return phone;
     }
 
     public static class Builder {
@@ -49,11 +54,6 @@ public class Person {
 
         public Builder() {
             this.person = new Person();
-        }
-
-        public Builder withId(Long id) {
-            this.person.id = id;
-            return this; // возвращает билдер
         }
 
         public Builder withFirstName(String firstName) {
@@ -66,23 +66,33 @@ public class Person {
             return this;
         }
 
+        public Builder withMiddleName(String middleName) {
+            this.person.middleName = middleName;
+            return this;
+        }
+
+        public Builder withAge(int age) {
+            this.person.age = age;
+            return this;
+        }
+
         public Builder withGender(String gender) {
             this.person.gender = gender;
             return this;
         }
 
-        public Builder withBirthDate(LocalDateTime birthDate) {
-            this.person.birthDate = birthDate;
+        public Builder withCountry(String country) {
+            this.person.country = country;
             return this;
         }
 
-        public Builder withProfession(String profession) {
-            this.person.profession = profession;
-            return  this;
+        public Builder withAddress(String address) {
+            this.person.address = address;
+            return this;
         }
 
-        public Builder withTittle(String tittle) {
-            this.person.tittle = tittle;
+        public Builder withPhone(String phone) {
+            this.person.phone = phone;
             return this;
         }
 
