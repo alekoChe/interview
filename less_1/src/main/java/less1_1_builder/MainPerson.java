@@ -1,6 +1,4 @@
-package interview.lesson_1_1.builder;
-
-import java.time.LocalDateTime;
+package less1_1_builder;
 
 public class MainPerson {
 

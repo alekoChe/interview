@@ -33,11 +33,11 @@ public class AnalogLinkedList<E> implements MyList<E>{
 
     @Override
     public void insert(int index, E obj) {
-
+        Node temp = nodes.get(index);
     }
 
     @Override
     public void delete(int index) {
-
+        nodes.delete(index);
     }
 }

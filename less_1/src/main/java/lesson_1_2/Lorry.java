@@ -1,4 +1,4 @@
-package interview.lesson_1_2;
+package lesson_1_2;
 
 class Lorry extends Car implements Moveable, Stopable {
 

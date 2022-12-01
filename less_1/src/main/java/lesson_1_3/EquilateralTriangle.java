@@ -1,4 +1,4 @@
-package interview.lesson_1_3;
+package lesson_1_3;
 
 public class EquilateralTriangle extends Figure {
     private float sideEquilateralTriangle;
